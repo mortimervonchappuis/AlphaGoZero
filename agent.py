@@ -5,6 +5,7 @@ from interface import Interface
 #from networkserver import NetworkServer
 #from emulation import Emulation
 import numpy as np
+from math import ceil
 
 
 class Agent:
