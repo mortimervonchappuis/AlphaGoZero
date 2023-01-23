@@ -88,7 +88,7 @@ class AutonomousAgent(Agent):
 							   C=C,
 							   n_threads=n_threads)
 		self.n_sammpling_moves = n_sammpling_moves
-		self.n_tree_nodes = n_tree_nodes
+		self.n_tree_nodes = int(ceil(n_tree_nodes/n_threads)) * n_threads
 		self.randomize = randomize
 		self.verbose = verbose
 		self.t = 0
